@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&display=swap" rel="stylesheet">
+    <title>FLEX-BOX</title>
+</head>
+<style>
+    body{
+        font-size: 15px;
+   
+    }
+
+.flex{
+    display:flex;
+    justify-content: center;
+    margin-top: 100px;
+flex-flow: wrap;
+   
+}
+.card-one{
+    background-color:  hsl(31, 77%, 52%);
+    width:240px;
+    height:430px;
+    border-radius: 10px 0 0 10px;
+    padding-left: 40px;
+ 
+}
+.card-two{
+background-color:  hsl(184, 100%, 22%);
+width:240px;
+padding-left: 40px;
+}
+.card-three{
+background-color:  hsl(179, 100%, 13%);
+width:240px;
+padding-left: 40px;
+border-radius: 0px 10px 10px 0 ;
+}
+img{
+    padding-top: 30px;
+}
+button{
+    border:2px solid hsl(0, 0%, 95%);
+    margin-top:40px;
+    margin-left: 20px;
+    width:120px;
+    background-color: transparent;
+    height:40px;
+    padding: 5px 20px;
+    color:hsl(0, 0%, 95%);
+    border-radius: 30px;
+    cursor:pointer;
+
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+   font-weight: 400;
+font-family: 'Lexend Deca', sans-serif;
+line-height:1.5;
+      
+}
+
+h2{
+    color:hsl(0, 0%, 95%);
+    padding-top: 20px;
+    font-family: 'Big Shoulders Text', cursive;
+font-weight:900;
+font-size: 30px;
+}
+
+</style>
+<body>
+    <div class="flex">
+   <div class="card-one">
+<img src="images/icon-sedans.svg">
+<h2>SEDANS</h2>
+<p>Choose a sedan for its<br>
+     affordability and excellent<br>
+     fuel enconomy. Ideal for<br>
+      cruising in the city or on<br>
+       your road trip</p>
+       <button>Learn More</button>
+   </div>
+   <div class="card-two">
+    <img src="images/icon-suvs.svg">
+    <h2>SUVS</h2>
+    <p>Take an SUV for its spacious<br>
+        interior, power, and<br>
+        versality. Perfect for your<br>
+         next family vacation and off-road adventures.<br>
+    </p>
+           <button>Learn More</button>
+       </div>
+       <div class="card-three">
+        <img src="images/icon-luxury.svg">
+        <h2>LUXURY</h2>
+        <p>Cruise in the best car brands<br>
+           without the bloated prices.<br>
+           Enjoy the enhanced comfort<br>
+           of a luxury rental and arrive in style.<br>
+               your road tripth</p>
+               <button>Learn More</button>
+           </div>
+       </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+
+<style>
+.grid-container {
+  display: grid;
+  gap: 10px;
+  background-color: black;
+  padding: 10px;
+}
+
+
+.grid-item {
+
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 600px 600px auto auto;
+  grid-template-rows: 200px auto;
+}
+
+
+.item1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+height:200px;
+color:orangered;
+width:500px;
+  background-color: orangered;
+}
+.item2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-template-columns: 100px;
+ width:300px;
+  height:200px;
+  position: relative;
+  right:50px;
+  background-color: orange;
+  color:orange;
+}
+.item4 {
+color:green;
+  grid-row-start: 3;
+  grid-row-end: 20;
+  width:300px;
+  height:200px;
+  position: relative;
+  bottom:30px;
+  background-color: green;
+
+}
+.item5
+{
+    grid-column-start:2;
+    grid-row-start: 3;
+    position: relative;
+    right:250px;
+    height:70px;
+width:500px;
+  bottom:30px;
+  color:#2196F3;
+    background-color: #2196F3;
+   
+ 
+}
+.item3{
+    background-color: black;
+    color:black;   
+}
+.item6{
+grid-column-start: 2;
+position: relative;
+    right:250px;
+
+    height:70px;
+width:500px;
+  bottom:20px;
+ color:#2196F3;
+    background-color: #2196F3;
+}
+
+</style>
+</head>
+<body>
+
+<h1>A Five Items Grid Layout</h1>
+
+<div class="grid-container">
+  <div class="grid-item item1">1</div>
+  <div class="grid-item item2">2</div><br>
+  <div class="grid-item item3">3</div>  
+  <div class="grid-item item4">4</div>
+  <div class="grid-item item5">5</div>
+  <div class="grid-item item6">5</div>
+
+</div>
+</body>
+</html>
